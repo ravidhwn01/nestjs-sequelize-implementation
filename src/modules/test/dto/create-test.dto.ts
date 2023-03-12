@@ -1,1 +1,3 @@
-export class CreateTestDto {}
+export interface CreateTestDto{
+    name:string
+}

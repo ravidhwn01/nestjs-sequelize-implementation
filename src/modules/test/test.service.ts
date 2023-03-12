@@ -13,7 +13,7 @@ export class TestService {
 
   }
   create(createTestDto: CreateTestDto) {
-    return 'This action adds a new test';
+    return this.repository.create(createTestDto as any)
   }
 
   findAll() {
